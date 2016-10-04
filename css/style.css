@@ -1,0 +1,108 @@
+
+@font-face{
+	font-family: "OptimusPrinceps";
+	src: url("fonts/OptimusPrinceps.ttf")  format("truetype");
+}
+
+@font-face{
+	font-family: "OptimusPrincepsSemiBold";
+	src: url("fonts/OptimusPrincepSemiBold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+
+
+
+body{
+	background-color: #2C1F2C;
+	color: #ffa94d;
+}
+
+
+
+h1, h2, h3, h4, h5{
+	font-family: OptimusPrinceps, Helvetica;
+	color: #ffe6cc;
+}
+
+h1{
+	font-size: 300%;
+}
+
+h3, h4, h5{
+	margin-top: 60px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h2{
+	font-size: 200%;
+	text-align: center;
+}
+
+p{
+	font-family: Tahoma;
+}
+
+li{
+	font-family: Tahoma;
+}
+
+th{
+	font-family: OptimusPrinceps, sans-serif;
+	background-color: #b35900;
+	font-weight: bold;
+	color: white;
+}
+		
+td{
+	padding: 4px;
+	border: 2px solid black;
+}
+
+/*Navigation*/
+#navlist{
+	padding: 3px 0;
+	font: bold 15px OptimusPrinceps, sans-serif;
+}
+
+#navlist li{
+	display:inline;
+	list-style: none;
+	margin-top: 5px;;
+}
+
+#navlist li a{
+	padding: 5px 10px;
+	border-bottom: none;
+	background: #DDE;
+	text-decoration: none;
+}
+
+#navlist a:link{
+	color: #448;
+}
+
+
+#navlist a:visited{
+	color: #667;
+}
+
+#navlist a:hover{
+	color: #000;
+	background: #AAE;
+	border-color: #227;
+}
+
+#navlist li a#current{
+	background:white;
+	border-bottom: 1px solid white;
+}
+
+footer{
+	font-size: 15px;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	
+}
