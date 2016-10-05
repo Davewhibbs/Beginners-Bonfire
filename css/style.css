@@ -40,42 +40,83 @@ h2{
 	text-align: center;
 }
 
+.multitool{
+	margin-left: 50px;
+	color: #ff704d;
+}
+
+.multip{
+	margin-left: 50px;
+}
+
 p{
 	font-family: Tahoma;
 }
 
+
+
 li{
 	font-family: Tahoma;
+	color: #ff704d;
+	margin-top: 10px;
+}
+
+strong{
+	color: #ffc180;
 }
 
 th{
 	font-family: OptimusPrinceps, sans-serif;
 	background-color: #b35900;
 	font-weight: bold;
-	color: white;
+	color: #ffe6cc;
 }
 		
 td{
+	font-family: Tahoma;
 	padding: 4px;
-	border: 2px solid black;
+	border: 2px solid #b35900;
+}
+
+#leftside{
+	position: relative;
+	width: 75%;
+	left: 10px;
+	margin-right: 5px;
+}
+
+footer{
+	position: relative;
+	bottom: 0px;
+	color: #ffe6cc;
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+	
 }
 
 /*Navigation*/
+#navcontainer{
+	background-color: #DDE;
+}
+
 #navlist{
 	padding: 3px 0;
+	margin-left: 0;
 	font: bold 15px OptimusPrinceps, sans-serif;
 }
 
 #navlist li{
-	display:inline;
+	width: 100%;
+	display: inline;
 	list-style: none;
-	margin-top: 5px;;
+	
 }
 
 #navlist li a{
+	width: 100%;
 	padding: 5px 10px;
 	border-bottom: none;
-	background: #DDE;
 	text-decoration: none;
 }
 
@@ -84,25 +125,10 @@ td{
 }
 
 
-#navlist a:visited{
-	color: #667;
-}
-
 #navlist a:hover{
 	color: #000;
 	background: #AAE;
 	border-color: #227;
 }
 
-#navlist li a#current{
-	background:white;
-	border-bottom: 1px solid white;
-}
 
-footer{
-	font-size: 15px;
-	bottom: 0px;
-	width: 100%;
-	text-align: center;
-	
-}
