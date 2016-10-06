@@ -27,6 +27,17 @@ h1, h2, h3, h4, h5{
 
 h1{
 	font-size: 300%;
+	margin-bottom: 0;
+	border-bottom: 2px solid #ffe6cc;
+}
+
+h6{
+	font-family: OptimusPrinceps, Helvetica;
+	color: #cc6900;
+	margin-top: 0;
+	font-size: 150%;
+	margin-bottom: 3%;
+	padding-top: 10px;
 }
 
 h3, h4, h5{
@@ -61,10 +72,83 @@ li{
 	margin-top: 10px;
 }
 
+.magics{
+	list-style-type: none;
+	
+}
+
+a{
+	font-family: Tahoma;
+	background-color: #ffe6cc;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+a:hover{
+	background-color: #cc6900; 
+	color: #ffe6cc;
+}
+
+a:active{
+	background-color: #ffe6cc;
+	color: #cc6900;
+}
+
+#previous{
+	position: relative;
+	top: 20px;
+	left: 33%;
+}
+
+#next{
+	position: relative;
+	top: 20px;
+	left: 50%;
+}
+
+
 strong{
 	color: #ffc180;
 }
 
+.starter{
+	position: relative;
+	left: 5%;
+}
+
+#vigor{
+	list-style-image: url("../media/images/vigor.jpg");
+}
+#attunement{
+	list-style-image: url("../media/images/attunement.jpg");
+}
+#endurance{
+	list-style-image: url("../media/images/endurance.jpg");
+}
+#vitality{
+	list-style-image: url("../media/images/vitality.jpg");
+}
+#strength{
+	list-style-image: url("../media/images/strength.jpg");
+}
+#dexterity{
+	list-style-image: url("../media/images/dexterity.jpg");
+}
+#intelligence{
+	list-style-image: url("../media/images/intelligence.jpg");
+}
+#faith{
+	list-style-image: url("../media/images/faith.jpg");
+}
+#luck{
+	list-style-image: url("../media/images/luck.jpg");
+}
+
+table{
+	float: left;
+}
 th{
 	font-family: OptimusPrinceps, sans-serif;
 	background-color: #b35900;
@@ -87,23 +171,24 @@ td{
 
 footer{
 	position: relative;
-	bottom: 0px;
+	top: 50px;
 	color: #ffe6cc;
 	font-size: 15px;
 	width: 100%;
 	text-align: center;
+	clear: both;
 	
 }
 
 /*Navigation*/
 #navcontainer{
-	background-color: #DDE;
 }
 
 #navlist{
+	height: 22px;
 	padding: 3px 0;
 	margin-left: 0;
-	font: bold 15px OptimusPrinceps, sans-serif;
+	font: bold 15px Tahoma, sans-serif;
 }
 
 #navlist li{
@@ -118,17 +203,22 @@ footer{
 	padding: 5px 10px;
 	border-bottom: none;
 	text-decoration: none;
+	border-radius: 0;
 }
 
 #navlist a:link{
-	color: #448;
+	color: #cc6900;
 }
 
 
 #navlist a:hover{
-	color: #000;
-	background: #AAE;
-	border-color: #227;
+	color: #ffe6cc;
+	background: #cc6900;
+}
+
+#navlist a:active{
+	background-color: #ffe6cc;
+	color: #cc6900;
 }
 
 
