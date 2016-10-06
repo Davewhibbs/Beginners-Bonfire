@@ -146,8 +146,13 @@ strong{
 	list-style-image: url("../media/images/luck.jpg");
 }
 
-.materials{
-	padding-left: 30px;
+img{
+	padding-right: 30px;
+}
+
+#magic_images{
+	position: relative;
+	left: 36%;
 }
 
 table{
