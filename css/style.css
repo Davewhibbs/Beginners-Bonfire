@@ -15,7 +15,8 @@
 
 body{
 	background-color: #2C1F2C;
-	color: #ffa94d;
+	color: #ffb566;
+	font-size: 100%;
 }
 
 
@@ -62,6 +63,7 @@ h2{
 
 p{
 	font-family: Tahoma;
+	line-height: 150%;
 }
 
 
@@ -78,12 +80,14 @@ li{
 }
 
 a{
+	color: #4b344b;
 	font-family: Tahoma;
 	background-color: #ffe6cc;
 	font-weight: bold;
 	text-decoration: none;
 	padding: 3px;
 	border-radius: 10px;
+	transition: .25s;
 }
 
 a:hover{
@@ -92,6 +96,11 @@ a:hover{
 }
 
 a:active{
+	background-color: #ffe6cc;
+	color: #cc6900;
+}
+
+#current{
 	background-color: #ffe6cc;
 	color: #cc6900;
 }
@@ -108,6 +117,11 @@ a:active{
 	left: 50%;
 }
 
+#nextmain{
+	position: relative;
+	top: 20px;
+	left: 44%;
+}
 
 strong{
 	color: #ffc180;
@@ -148,6 +162,9 @@ strong{
 
 img{
 	padding-right: 30px;
+	max-width: 100%;
+	height: auto;
+
 }
 
 #magic_images{
@@ -171,11 +188,14 @@ td{
 	border: 2px solid #b35900;
 }
 
-#leftside{
-	position: relative;
-	width: 75%;
-	left: 10px;
-	margin-right: 5px;
+main{
+	height:100%;
+	padding-left:2em;
+	padding-right: 2em;
+	line-height: 20px;
+	display:block;
+	margin:auto;
+	max-width:800px;
 }
 
 footer{
@@ -190,44 +210,83 @@ footer{
 }
 
 /*Navigation*/
-#navcontainer{
-}
-
-#navlist{
-	height: 22px;
-	padding: 3px 0;
-	margin-left: 0;
-	font: bold 15px Tahoma, sans-serif;
-}
-
-#navlist li{
-	width: 100%;
-	display: inline;
-	list-style: none;
-	
-}
-
-#navlist li a{
-	width: 100%;
-	padding: 5px 10px;
-	border-bottom: none;
-	text-decoration: none;
-	border-radius: 0;
-}
-
-#navlist a:link{
-	color: #cc6900;
+nav{
+	float: left;
+	font-size: 80%;
+	margin: auto;
+	padding: 1em;
+	margin-top: -10px;
+	text-align: center;
+	margin-bottom: 3em;
+	max-width: 300px;
+	font-weight: bold;
 }
 
 
-#navlist a:hover{
+.navigation{
+	display: block;
+	margin: auto;
+	border: 2px solid black;
+}
+
+.navigation:hover{
 	color: #ffe6cc;
 	background: #cc6900;
 }
 
-#navlist a:active{
+.navigation:active{
 	background-color: #ffe6cc;
 	color: #cc6900;
+}
+
+@media only screen 
+and (max-width: 700px) 
+and (min-width: 480px){
+
+	body{
+		font-size: 75%;
+	}
+}
+
+
+@media only screen 
+and (max-width: 480px){
+	body{
+		font-size: 50%;
+	}
+	
+	footer{
+		font-size: 100%;
+	}
+	
+	nav{
+		background: none;
+		text-align: center;
+		float: none;
+	}
+	
+	img{
+		max-width: 50%;
+	}
+	
+	#previous{
+		left: 0;
+	}
+	#next{
+		left: 45%;
+	}
+	
+	
+	
+	.link{
+		display: block;
+		font-size: 15px;
+		font-weight: bold;
+		margin: auto;
+		border-radius: 5px;
+		margin-bottom: 4px;
+		background-color: #ffe6cc;
+	}
 }
 
 
